@@ -1,0 +1,47 @@
+$colors:rgb(226, 223, 223),rgb(161, 151, 151),rgb(116, 104, 104),rgb(226, 205, 205),rgb(114, 113, 113),rgb(206, 171, 171),;
+
+body, html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    margin: 5rem;
+    border: 2px solid #000;
+    border-radius: 30px;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-gap: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    .card{
+        transition: transform 1s;
+
+        @for $i from 1 through 6{
+            &:nth-of-type(#{$i}){
+                background: nth($colors, $i);
+            }
+        }
+
+        &:hover{
+            transform: translateY(-14px)
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .info{
+            padding: 1rem;
+        }
+    }
+}
