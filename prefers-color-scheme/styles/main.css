@@ -1,1 +1,36 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  color: var(--color);
+  background: var(--background-color);
+  height: 100vh;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-transition: background-color, color 1s;
+  transition: background-color, color 1s;
+}
+
+.container {
+  width: 80%;
+  background: var(--panel-bg);
+  border-radius: 10px;
+  padding: 4em;
+}
+
+.container h1 {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  h1:after {
+    content: 'Dark';
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  h1:after {
+    content: 'Light';
+  }
+}
+/*# sourceMappingURL=main.css.map */
