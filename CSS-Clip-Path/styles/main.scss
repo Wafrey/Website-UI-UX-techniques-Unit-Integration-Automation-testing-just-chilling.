@@ -1,4 +1,5 @@
-body, html{
+body,
+html {
     background: rgb(120, 158, 207);
     margin: 0;
     height: 100vh;
@@ -8,17 +9,30 @@ body, html{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.container{
-    width: 30%;
-    background: #fff;
-    border-radius: 30px;
+.inner {
+    background: #0ceaf1;
     padding: 1em;
+    border-radius: 30px;
+    width: 400px;
+    color: #fff;
+    font-size: 1.3em;
+    clip-path: circle(10% at 85% 25%);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 
-    .inner{
-        background: #2686ac;
-        padding: 1em;
-        border-radius: 30px;
-        color: #fff;
-        font-size: 1.3em;
+    &:hover{
+        clip-path:circle(75%);
+        background: #c9d83f;
+        transition: all 1.5s;
+    }
+
+    span{
+        float: right;
+        color: white;
+        font-weight: bold;
+        transition: color .5s;
+        position: relative;
+        margin-right: 4%;
+        margin-top: 8%;
     }
 }

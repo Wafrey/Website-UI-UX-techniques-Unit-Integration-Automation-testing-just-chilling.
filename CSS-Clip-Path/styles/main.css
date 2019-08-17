@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   background: #789ecf;
   margin: 0;
   height: 100vh;
@@ -11,18 +12,36 @@ body, html {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.container {
-  width: 30%;
-  background: #fff;
-  border-radius: 30px;
-  padding: 1em;
-}
-
-.container .inner {
-  background: #2686ac;
+.inner {
+  background: #0ceaf1;
   padding: 1em;
   border-radius: 30px;
+  width: 400px;
   color: #fff;
   font-size: 1.3em;
+  -webkit-clip-path: circle(10% at 85% 25%);
+          clip-path: circle(10% at 85% 25%);
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #c9d83f;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin-right: 4%;
+  margin-top: 8%;
 }
 /*# sourceMappingURL=main.css.map */
