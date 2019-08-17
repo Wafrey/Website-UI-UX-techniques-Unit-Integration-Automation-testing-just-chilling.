@@ -1,0 +1,24 @@
+body, html{
+    background: rgb(120, 158, 207);
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    width: 30%;
+    background: #fff;
+    border-radius: 30px;
+    padding: 1em;
+
+    .inner{
+        background: #2686ac;
+        padding: 1em;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 1.3em;
+    }
+}

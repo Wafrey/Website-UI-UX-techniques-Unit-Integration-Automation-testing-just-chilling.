@@ -1,0 +1,28 @@
+body, html {
+  background: #789ecf;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 30%;
+  background: #fff;
+  border-radius: 30px;
+  padding: 1em;
+}
+
+.container .inner {
+  background: #2686ac;
+  padding: 1em;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.3em;
+}
+/*# sourceMappingURL=main.css.map */
