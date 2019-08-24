@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 3em;
+}
+
+h1{
+    font-size: 3em;
+    margin-top: 3em;
+    padding: .2em;
+    background-image: paint(georgibg)
+}

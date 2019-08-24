@@ -1,1 +1,1 @@
-CSS.paintWorklet.addModule('./stlyes/custombg.js');
+CSS.paintWorklet.addModule('custombg.js');
