@@ -1,0 +1,1 @@
+CSS.paintWorklet.addModule('./stlyes/custombg.js');
