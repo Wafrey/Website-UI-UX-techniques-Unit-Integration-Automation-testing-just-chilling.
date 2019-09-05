@@ -30,7 +30,7 @@ button{
     width: 55%;
     bottom: 0;
     right: 0;
-    background: #EAEAEA;
+    background: #fff;
     box-sizing: border-box;
     padding: 15% 7%;
     transform: scaleY(0);
@@ -41,11 +41,13 @@ button{
         width: 240px;
         float: left;
         margin-left: 50px;
+        opacity: 0;
     }
 
     p{
         font-size: 1.9em;
         width: 80%;
+        opacity: 0;
     }
 
     .box{
@@ -53,9 +55,13 @@ button{
         width: 65%;
         height: 40%;
         position: absolute;
-        left: -7%;
-        top: 15%;
+        left: 10%;
+        top: 23%;
         opacity: 0;
         z-index: -1;
+    }
+
+    #hide{
+        opacity: 0;
     }
 }
